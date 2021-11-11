@@ -24,4 +24,4 @@ ctx.postMessage({ foo: 'foo' });
 // Respond to message from parent thread
 ctx.addEventListener('message', (event) => console.log(event));
 
-export default {} as typeof Worker & { new (): Worker };
+// export default {} as typeof Worker & { new (): Worker };

@@ -34,7 +34,11 @@
             "scripts": [],
             "webWorkerTsConfig": "tsconfig.worker.json",
             "customWebpackConfig": {
-              "path": "./webpack.config.ts"
+              "path": "./webpack.config.ts",
+              "mergeStrategies": {
+                "module": "prepend",
+                "loaders": "replace"
+              }
             }
           },
           "configurations": {
